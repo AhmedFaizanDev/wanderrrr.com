@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center gap-3">
           <Camera className="w-7 h-7 text-primary" />
           <h1 className="font-display text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-            Wanderlens
+            wanderrrr.com
           </h1>
         </div>
         
