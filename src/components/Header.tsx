@@ -1,4 +1,4 @@
-import { Camera, Globe, User, Search } from "lucide-react";
+import { Camera, Globe, User, Search, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -31,6 +31,10 @@ const Header = () => {
           <Button variant="ghost" className="hidden md:flex items-center gap-2">
             <Camera className="w-4 h-4" />
             Upload
+          </Button>
+          <Button variant="ghost" className="hidden md:flex items-center gap-2">
+            <ShoppingBag className="w-4 h-4" />
+            Shop
           </Button>
           <Button variant="default" className="flex items-center gap-2">
             <User className="w-4 h-4" />
