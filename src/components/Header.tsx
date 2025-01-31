@@ -1,15 +1,18 @@
 import { Camera, Globe, User, Search, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Camera className="w-7 h-7 text-primary" />
-          <h1 className="font-display text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-            wanderrrr.com
-          </h1>
+          <Link to="/" className="flex items-center gap-3">
+            <Camera className="w-7 h-7 text-primary" />
+            <h1 className="font-display text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
+              wanderrrr.com
+            </h1>
+          </Link>
         </div>
         
         <div className="hidden md:flex items-center gap-8 flex-1 max-w-md mx-12">
@@ -32,10 +35,12 @@ const Header = () => {
             <Camera className="w-4 h-4" />
             Upload
           </Button>
-          <Button variant="ghost" className="hidden md:flex items-center gap-2">
-            <ShoppingBag className="w-4 h-4" />
-            Shop
-          </Button>
+          <Link to="/shop">
+            <Button variant="ghost" className="hidden md:flex items-center gap-2">
+              <ShoppingBag className="w-4 h-4" />
+              Shop
+            </Button>
+          </Link>
           <Button variant="default" className="flex items-center gap-2">
             <User className="w-4 h-4" />
             Sign In
